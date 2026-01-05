@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Redirection…</title>
+  <meta http-equiv="refresh" content="0;url=https://david.pilato.fr">
+  <script>
+    const path = window.location.pathname;
+    const target = "https://david.pilato.fr" + path;
+    window.location.replace(target);
+  </script>
+</head>
+<body>
+  <p>Redirection vers <a id="link" href="#">david.pilato.fr</a>…</p>
+  <script>
+    document.getElementById("link").href = target;
+  </script>
+</body>
+</html>
